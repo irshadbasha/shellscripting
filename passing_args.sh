@@ -1,0 +1,17 @@
+#!/usr/bin/bash
+
+# GET ARGUMENTS FROM USER N PRINT THEM AS IT IS IN STANDARD WAY
+echo $0
+
+echo $1 $2 $3 $4
+
+# GET STRING ARGUMENTS IN AN ARRAY N PRINT THEM AS IT  IS
+
+STRING_ARRAY=("$@")
+
+echo ${STRING_ARRAY[0]} ${STRING_ARRAY[1]} ${STRING_ARRAY[2]} ${STRING_ARRAY[3]}
+
+# PRINT THE WHOLE ARRAY @ ONCE
+echo $@
+
+echo the no.of arguments passed are:$#
